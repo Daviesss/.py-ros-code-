@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import curses
 import rospy 
 from geometry_msgs.msg import Twist
 import RPi.GPIO as GPIO
@@ -34,10 +33,10 @@ pwm_l.start(0)
 MAX_DUTY_CYCLE = 100 # Max pulse
 
 
-screen = curses.initscr()
-curses.noecho()
-curses.cbreak()
-screen.keypad(True)
+# screen = curses.initscr()
+# curses.noecho()
+# curses.cbreak()
+# screen.keypad(True)
 
 WHEEL_SEP = 1.2 #distance between you wheels....
 velocity_message = Twist()
